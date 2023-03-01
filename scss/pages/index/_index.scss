@@ -1,0 +1,696 @@
+.carousel {
+  background-color: $bg-dark;
+  .row {
+    min-height: 700px;
+    .content-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 30px;
+      @include responsive("xxs") {
+        text-align: center;
+      }
+      @include responsive("xxs") {
+        text-align: center;
+      }
+      @include responsive("sm") {
+        text-align: center;
+      }
+      @include responsive("md") {
+        text-align: left;
+      }
+      @include responsive("lg") {
+        text-align: left;
+      }
+      .title {
+        h3 {
+          @include text($text-6xl, $text-semiBold, $text-white);
+          font-family: $font-Poppins;
+          padding-bottom: 36px;
+          @include responsive("xxs") {
+            @include text($text-3xl1, $text-semiBold, $text-white);
+            font-family: $font-Poppins;
+          }
+          @include responsive("sm") {
+            @include text($text-3xl2, $text-semiBold, $text-white);
+            font-family: $font-Poppins;
+          }
+          @include responsive("md") {
+            @include text($text-3xl2, $text-semiBold, $text-white);
+            font-family: $font-Poppins;
+          }
+          @include responsive("lg") {
+            @include text($text-6xl, $text-semiBold, $text-white);
+            font-family: $font-Poppins;
+          }
+        }
+      }
+      .description {
+        @include text($text-2xl, $text-light, $text-grey);
+        font-family: $font-Poppins;
+        text-align: justify;
+        padding-bottom: 20px;
+        @include responsive("xxs") {
+          font-size: $text-base;
+        }
+        @include responsive("sm") {
+          font-size: $text-xl;
+        }
+        @include responsive("lg") {
+          font-size: $text-2xl;
+        }
+      }
+      .select-button {
+        button {
+          @include responsive("xxs") {
+            @include button(
+              $text-xs,
+              $text-regular,
+              $text-button,
+              $bg-button,
+              12px 28px 12px 28px
+            );
+          }
+          @include responsive("lg") {
+            @include button(
+              $text-xl,
+              $text-semiBold,
+              $text-button,
+              $bg-button,
+              16px 32px 16px 32px
+            );
+          }
+        }
+      }
+    }
+    .content-right {
+      position: relative;
+      text-align: center;
+      @include responsive("sm") {
+        text-align: center;
+      }
+      img {
+        width: 600px;
+        height: 800px;
+        border-radius: 5px;
+        @include responsive("xxs") {
+          width: 350px;
+          height: 400px;
+          position: relative;
+          padding-bottom: 20px;
+        }
+        @include responsive("xs") {
+          width: 400px;
+          height: 400px;
+          position: relative;
+          padding-bottom: 20px;
+        }
+        @include responsive("sm") {
+          width: 400px;
+          height: 400px;
+          position: relative;
+          padding-bottom: 20px;
+        }
+        @include responsive("md") {
+          width: 450px;
+          height: 800px;
+          position: absolute;
+          left: 35px;
+        }
+        @include responsive("lg") {
+          width: 500px;
+          height: 800px;
+          position: absolute;
+        }
+        @include responsive("xl") {
+          width: 600px;
+          height: 800px;
+          position: absolute;
+        }
+      }
+    }
+  }
+}
+.product {
+  @include responsive("xxs") {
+    padding-top: 50px;
+  }
+  @include responsive("md") {
+    padding-top: 234px;
+  }
+
+  .title {
+    @include text($text-6xl, $text-semiBold, $text-dark);
+    padding-bottom: 48px;
+    h3 {
+      font-family: $font-Poppins;
+      @include responsive("xxs") {
+        font-size: $text-3xl2;
+      }
+      @include responsive("md") {
+        font-size: $text-3xl2;
+      }
+      @include responsive("lg") {
+        font-size: $text-6xl;
+      }
+    }
+  }
+  .main {
+    .list {
+      .item {
+        .thumnail {
+          img {
+            width: 100%;
+          }
+        }
+        .detail {
+          .name-product {
+            color: $text-title;
+            span {
+              @include text($text-3xl1, $text-semiBold, $text-product);
+              font-family: $font-Poppins;
+              @include responsive("xxs") {
+                font-size: $text-base;
+              }
+              @include responsive("sm") {
+                font-size: $text-xl;
+              }
+              @include responsive("md") {
+                font-size: $text-2xl;
+              }
+              @include responsive("lg") {
+                font-size: $text-3xl1;
+              }
+            }
+          }
+        }
+        .price {
+          span {
+            @include text($text-xl, $text-regular, $text-price);
+            @include responsive("xxs") {
+              font-size: $text-xs;
+            }
+            @include responsive("sm") {
+              font-size: $text-base;
+            }
+            @include responsive("lg") {
+              font-size: $text-xl;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.advance {
+  background-color: $bg-dark;
+  margin-top: 200px;
+  .tech-left {
+    h3 {
+      @include text($text-2xl, $text-regular, $text-grey);
+      padding-top: 80px;
+      padding-bottom: 20px;
+      @include responsive("xs") {
+        font-size: $text-base;
+      }
+      @include responsive("sm") {
+        font-size: $text-xl;
+      }
+      @include responsive("lg") {
+        font-size: $text-2xl;
+      }
+    }
+    .title {
+      @include text($text-6xl, $text-semiBold, $text-white);
+      font-family: $font-Poppins;
+      @include responsive("xxs") {
+        font-size: $text-3xl1;
+      }
+      @include responsive("sm") {
+        font-size: $text-3xl2;
+      }
+      @include responsive("lg") {
+        font-size: $text-6xl;
+      }
+    }
+    p {
+      @include text($text-2xl, $text-light, $text-grey);
+      @include responsive("xxs") {
+        font-size: $text-base;
+      }
+      @include responsive("sm") {
+        font-size: $text-xl;
+      }
+      @include responsive("lg") {
+        font-size: $text-2xl;
+      }
+    }
+    .model {
+      padding-bottom: 50px;
+      .title {
+        h3 {
+          @include text($text-2xl, $text-semiBold, $text-title);
+          text-decoration: underline;
+          font-family: $font-Poppins;
+          padding-top: 20px;
+          @include responsive("xxs") {
+            font-size: $text-base;
+          }
+          @include responsive("sm") {
+            font-size: $text-xl;
+          }
+          @include responsive("lg") {
+            font-size: $text-2xl;
+          }
+        }
+        .item-1 {
+          padding-top: 10px;
+          .icon {
+            @include text($text-xl, $text-semiBold, $text-title);
+          }
+          p {
+            @include text($text-2xl, $text-regular, $text-white);
+            @include responsive("xxs") {
+              font-size: $text-base;
+            }
+            @include responsive("sm") {
+              font-size: $text-xl;
+            }
+            @include responsive("lg") {
+              font-size: $text-2xl;
+            }
+          }
+          .description {
+            @include text($text-base, $text-light, $text-grey);
+            @include responsive("xxs") {
+              font-size: $text-xs;
+            }
+            @include responsive("lg") {
+              font-size: $text-base;
+            }
+          }
+        }
+        .item-2 {
+          @extend .item-1;
+        }
+      }
+    }
+  }
+  .tech-right {
+    position: relative;
+    @include responsive("xxs") {
+      text-align: center;
+    }
+    img {
+      @include responsive("xxs") {
+        width: 350px;
+        height: 300px;
+        position: relative;
+        padding-bottom: 20px;
+      }
+      @include responsive("xs") {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        padding-bottom: 20px;
+      }
+      @include responsive("md") {
+        width: 400px;
+        height: 800px;
+        left: 50px;
+        top: -30px;
+        position: absolute;
+      }
+      @include responsive("lg") {
+        width: 500px;
+        height: 1190px;
+        left: 50px;
+        top: -80px;
+        position: absolute;
+      }
+    }
+  }
+}
+.partner {
+  padding-top: 200px;
+  @include responsive("sm") {
+    padding-top: 50px;
+  }
+  @include responsive("md") {
+    padding-top: 200px;
+  }
+  .title {
+    @include responsive("xxs") {
+      text-align: center;
+    }
+    @include responsive("md") {
+      text-align: left;
+    }
+    h3 {
+      @include text($text-6xl, $text-semiBold, $text-product);
+      font-family: $font-Poppins;
+      @include responsive("xxs") {
+        font-size: $text-3xl2;
+      }
+      @include responsive("sm") {
+        font-size: $text-3xl2;
+      }
+      @include responsive("lg") {
+        font-size: $text-6xl;
+      }
+    }
+  }
+  .main {
+    padding-top: 60px;
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 2px;
+      background-color: $bg-table;
+      text-align: center;
+      @include responsive("xxs") {
+        grid-template-columns: 1fr;
+      }
+      @include responsive("sm") {
+        grid-template-columns: 1fr 1fr;
+      }
+      @include responsive("md") {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+      .item {
+        padding: 20px;
+        background-color: $bg-light;
+        img {
+        }
+      }
+    }
+  }
+}
+.comment {
+  margin-top: 120px;
+  background-color: $bg-dark;
+  .content {
+    .row {
+      margin: 0;
+      .content-left {
+        img {
+          width: 100%;
+          height: 680px;
+          @include responsive("xxs") {
+            width: 100%;
+            height: 300px;
+          }
+          @include responsive("sm") {
+            width: 100%;
+            height: 500px;
+          }
+        }
+      }
+      .content-right {
+        background-color: $bg-main;
+        padding: 20px;
+        .detail-top {
+          img {
+          }
+        }
+        .detail-bottom {
+          display: flex;
+          flex-direction: column;
+          justify-content: end;
+          @include responsive("xxs") {
+            text-align: center;
+          }
+          @include responsive("md") {
+            text-align: left;
+          }
+          .description {
+            padding-right: 333px;
+            @include responsive("xxs") {
+              padding-right: 0;
+            }
+            @include responsive("md") {
+              padding-right: 250px;
+            }
+            @include responsive("xl") {
+                padding-right: 433px;
+              }
+            h4 {
+              @include text($text-3xl2, $text-bold, $text-deal);
+              font-family: $font-Merriweather;
+              font-style: italic;
+              @include responsive("xxs") {
+                font-size: $text-base;
+              }
+              @include responsive("md") {
+                font-size: $text-xl;
+              }
+              @include responsive("lg") {
+                font-size: $text-2xl;
+              }
+            }
+          }
+          .author {
+            p {
+              @include text($text-2xl, $text-semiBold, $text-author);
+              font-family: $font-Poppins;
+              @include responsive("xxs") {
+                font-size: $text-xs;
+              }
+              @include responsive("md") {
+                font-size: $text-base;
+              }
+              @include responsive("lg") {
+                font-size: $text-xl;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .deal {
+    background-color: $bg-deal;
+    padding-top: 60px;
+    .main {
+      .title {
+        @include responsive("xxs") {
+          text-align: center;
+        }
+        @include responsive("lg") {
+          text-align: left;
+        }
+        h3 {
+          @include text($text-6xl, $text-semiBold, $text-title-deal);
+          font-family: $font-Poppins;
+          @include responsive("xxs") {
+            font-size: $text-3xl2;
+          }
+          @include responsive("lg") {
+            font-size: $text-6xl;
+          }
+        }
+      }
+      .option {
+        padding-bottom: 120px;
+        .option-silver {
+          padding: 0 50px;
+          margin-top: 100px;
+          .item {
+            padding-top: 100px;
+            background-color: $bg-dark;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            @include responsive("xxs") {
+              flex-direction: column;
+            }
+            @include responsive("xs") {
+              flex-direction: row;
+            }
+            .detail {
+              .title {
+                padding-left: 60px;
+                padding-bottom: 30px;
+                padding-top: 20px;
+                @include responsive("xxs") {
+                  padding-left: 0;
+                }
+                @include responsive("xs") {
+                  padding-left: 60px;
+                }
+                h4 {
+                  @include text($text-3xl2, $text-semiBold, $text-silver);
+                  font-family: $font-Poppins;
+                  @include responsive("xxs") {
+                    font-size: $text-3xl1;
+                  }
+                  @include responsive("lg") {
+                    font-size: $text-3xl2;
+                  }
+                }
+              }
+              .service {
+                ul {
+                  li {
+                    list-style: none;
+                    p {
+                      color: $text-title;
+                      white-space: nowrap;
+                      span {
+                        @include text($text-xl, $text-regular, $text-white);
+                        @include responsive("xxs") {
+                          font-size: $text-base;
+                        }
+                        @include responsive("lg") {
+                          font-size: $text-xl;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              .sign-up {
+                padding: 20px 60px;
+                .btn {
+                  @include button(
+                    $text-xl,
+                    $text-semiBold,
+                    $text-sign-up,
+                    $bg-deal,
+                    16px 32px 16px 32px
+                  );
+                  @include responsive("xxs") {
+                    font-size: $text-xs;
+                  }
+                  @include responsive("xs") {
+                    font-size: $text-base;
+                  }
+                  @include responsive("lg") {
+                    font-size: $text-xl;
+                  }
+                  border-radius: 5px;
+                }
+              }
+            }
+            .price {
+              padding-top: 20px;
+              padding-right: 20px;
+              text-align: end;
+
+              @include responsive("xs") {
+              }
+              .cost {
+                @include text($text-3xl2, $text-semiBold, $text-white);
+                font-family: $font-Poppins;
+                margin-bottom: 0;
+              }
+              span {
+                @include text($text-xs, $text-semiBold, $text-monthly);
+                font-family: $font-Poppins;
+              }
+            }
+          }
+        }
+
+        .option-gold {
+          padding: 0 50px;
+          margin-top: 100px;
+          .item {
+            padding-top: 100px;
+            background-color: $bg-dark;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            @include responsive("xxs") {
+              flex-direction: column;
+            }
+            @include responsive("xs") {
+              flex-direction: row;
+            }
+            .detail {
+              .title {
+                padding-left: 60px;
+                padding-bottom: 30px;
+                padding-top: 20px;
+                @include responsive("xxs") {
+                  padding-left: 0;
+                }
+                @include responsive("xs") {
+                  padding-left: 60px;
+                }
+                h4 {
+                  @include text($text-3xl2, $text-semiBold, $text-gold);
+                  font-family: $font-Poppins;
+                  @include responsive("xxs") {
+                    font-size: $text-3xl1;
+                  }
+                  @include responsive("lg") {
+                    font-size: $text-3xl2;
+                  }
+                }
+              }
+              .service {
+                ul {
+                  li {
+                    list-style: none;
+                    p {
+                      color: $text-title;
+                      white-space: nowrap;
+                      span {
+                        @include text($text-xl, $text-regular, $text-white);
+                        @include responsive("xxs") {
+                          font-size: $text-base;
+                        }
+                        @include responsive("lg") {
+                          font-size: $text-xl;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              .sign-up {
+                padding: 20px 60px;
+                .btn {
+                  @include button(
+                    $text-xl,
+                    $text-semiBold,
+                    $text-button,
+                    $bg-button,
+                    16px 32px 16px 32px
+                  );
+                  @include responsive("xxs") {
+                    font-size: $text-xs;
+                  }
+                  @include responsive("xs") {
+                    font-size: $text-base;
+                  }
+                  @include responsive("lg") {
+                    font-size: $text-xl;
+                  }
+                  border-radius: 5px;
+                }
+              }
+            }
+            .price {
+              padding-top: 20px;
+              padding-right: 20px;
+              text-align: end;
+              .cost {
+                @include text($text-3xl2, $text-semiBold, $text-white);
+                font-family: $font-Poppins;
+                margin-bottom: 0;
+              }
+              span {
+                @include text($text-xs, $text-semiBold, $text-monthly);
+                font-family: $font-Poppins;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

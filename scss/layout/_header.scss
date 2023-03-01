@@ -1,0 +1,33 @@
+.header {
+  background-color: $bg-dark;
+  .header-left {
+    padding: 34px 0;
+    a {
+      img {
+        height: 28px;
+        width: 133px;
+      }
+    }
+  }
+  .header-right {
+    padding: 34px 0;
+    ul {
+      display: flex;
+      justify-content: end;
+      margin-bottom: 0;
+      li {
+        list-style: none;
+        padding-right: 40px;
+        a {
+          text-decoration: none;
+          display: block;
+          @include text($text-xl, $text-regular, $text-white);
+          font-family: $font-Poppins;
+          &:hover{
+            opacity: 0.3;
+          }
+        }
+      }
+    }
+  }
+}

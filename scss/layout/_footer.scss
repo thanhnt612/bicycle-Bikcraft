@@ -1,0 +1,101 @@
+.footer {
+  background-color: $bg-dark;
+  padding-top: 60px;
+  .row {
+    .logo {
+      img {
+        width: 133.54px;
+        height: 28.58px;
+      }
+      @include responsive("xxs") {
+        margin-bottom: 50px;
+      }
+      @include responsive("xs") {
+        margin-bottom: 0;
+      }
+    }
+    .contact {
+      @include responsive("xxs") {
+        margin-bottom: 50px;
+      }
+      @include responsive("xs") {
+        margin-bottom: 0;
+      }
+      .title {
+        @include text($text-2xl, $text-regular, $text-white);
+        @include responsive("xxs") {
+          font-size: $text-xl;
+        }
+        @include responsive("xs") {
+          font-size: $text-2xl;
+        }
+      }
+      .phone {
+        @include text($text-xl, $text-light, $text-grey);
+        @include responsive("xxs") {
+          font-size: $text-xs;
+        }
+        @include responsive("xs") {
+          font-size: $text-xl;
+        }
+      }
+      .address {
+        @include text($text-xl, $text-regular, $text-grey);
+        @include responsive("xxs") {
+          font-size: $text-xs;
+        }
+        @include responsive("xs") {
+          font-size: $text-xl;
+        }
+      }
+      .social-media {
+        @include text($text-3xl1, $text-regular, $text-white);
+        @include responsive("xxs") {
+          font-size: $text-xl;
+        }
+        @include responsive("xs") {
+          font-size: $text-2xl;
+        }
+        span {
+          svg {
+            padding-right: 20px;
+          }
+        }
+      }
+    }
+    .information {
+      .title {
+        @include text($text-2xl, $text-regular, $text-white);
+        @include responsive("xxs") {
+          font-size: $text-base;
+        }
+        @include responsive("xs") {
+          font-size: $text-2xl;
+        }
+      }
+      ul {
+        padding-left: 0;
+        li {
+          list-style: none;
+          a {
+            text-decoration: none;
+            @include text($text-xl, $text-light, $text-grey);
+            font-family: $font-Poppins;
+            &:hover {
+              opacity: 0.5;
+            }
+            @include responsive("xxs") {
+              font-size: $text-xs;
+            }
+            @include responsive("xs") {
+              font-size: $text-xl;
+            }
+          }
+        }
+      }
+    }
+  }
+  .license {
+    @include text($text-xl, $text-light, $text-grey);
+  }
+}
